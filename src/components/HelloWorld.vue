@@ -1,15 +1,15 @@
 <template>
-  {{ msg }}
+  {{ props.msg }}
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
-export default defineComponent({
-  props: {
-    msg: {
-      type: String,
-      default: 'Hello World',
-    },
+<script lang="ts" setup>
+import { defineProps } from 'vue'
+
+const props = defineProps({
+  msg: {
+    type: String,
+    default: 'Hello Vue 3 + TypeScript + Vite + Tailwind + Vue-Router',
   },
 })
+
 </script>

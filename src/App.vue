@@ -3,18 +3,10 @@
   <router-view />
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
+<script lang="ts" setup>
+
 import HelloWorld from './components/HelloWorld.vue'
 import useDarkmode from './use/Darkmode'
 
-export default defineComponent({
-  name: 'App',
-  components: {
-    HelloWorld,
-  },
-  setup() {
-    useDarkmode()
-  },
-})
+useDarkmode()
 </script>
